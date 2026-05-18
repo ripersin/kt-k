@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KT-K 접수 링크</title>
+<style>
+:root {
+  --bg:#fff7ed;
+  --card:#ffffff;
+  --text:#1f2937;
+  --muted:#78716c;
+  --line:#fed7aa;
+  --primary:#f97316;
+  --primary-dark:#ea580c;
+  --soft:#ffedd5;
+  --green:#16a34a;
+}
+* { box-sizing:border-box; }
+body {
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",Arial,sans-serif;
+  background:linear-gradient(180deg,#fff7ed 0%,#fffbeb 100%);
+  color:var(--text);
+}
+.wrap {
+  max-width:760px;
+  margin:0 auto;
+  padding:22px 14px 40px;
+}
+.header {
+  background:linear-gradient(135deg,#fb923c,#f97316);
+  color:white;
+  border-radius:24px;
+  padding:22px 20px;
+  box-shadow:0 14px 30px rgba(249,115,22,.22);
+  margin-bottom:16px;
+}
+.header h1 {
+  margin:0 0 8px;
+  font-size:28px;
+  letter-spacing:-.04em;
+}
+.header p {
+  margin:0;
+  opacity:.92;
+  font-size:14px;
+}
+.notice {
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:12px 14px;
+  color:#9a3412;
+  font-size:13px;
+  margin-bottom:14px;
+}
+.acc {
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:18px;
+  margin:10px 0;
+  overflow:hidden;
+  box-shadow:0 8px 18px rgba(124,45,18,.06);
+}
+summary {
+  cursor:pointer;
+  list-style:none;
+  padding:16px 16px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  font-weight:800;
+  letter-spacing:-.03em;
+}
+summary::-webkit-details-marker { display:none; }
+summary:after {
+  content:"＋";
+  color:var(--primary);
+  font-size:20px;
+  font-weight:900;
+  margin-left:10px;
+}
+details[open] summary:after { content:"－"; }
+summary em {
+  font-style:normal;
+  font-size:12px;
+  color:var(--primary-dark);
+  background:var(--soft);
+  padding:4px 8px;
+  border-radius:999px;
+  margin-left:auto;
+  margin-right:8px;
+}
+.panel {
+  border-top:1px solid var(--line);
+  padding:10px;
+  background:#fffaf5;
+}
+.item {
+  display:flex;
+  gap:10px;
+  justify-content:space-between;
+  align-items:center;
+  padding:11px 8px;
+  border-bottom:1px dashed #fed7aa;
+}
+.item:last-child { border-bottom:0; }
+.model {
+  font-weight:750;
+  font-size:14px;
+  word-break:keep-all;
+}
+.actions {
+  display:flex;
+  gap:6px;
+  flex-shrink:0;
+}
+.btn {
+  border:0;
+  border-radius:12px;
+  padding:9px 10px;
+  font-size:12px;
+  font-weight:800;
+  text-decoration:none;
+  cursor:pointer;
+  white-space:nowrap;
+}
+.open {
+  background:var(--primary);
+  color:#fff;
+}
+.copy {
+  background:#ffedd5;
+  color:#9a3412;
+}
+.toast {
+  position:fixed;
+  left:50%;
+  bottom:24px;
+  transform:translateX(-50%);
+  background:#111827;
+  color:white;
+  padding:10px 14px;
+  border-radius:999px;
+  font-size:13px;
+  opacity:0;
+  pointer-events:none;
+  transition:.2s;
+}
+.toast.show { opacity:1; bottom:34px; }
+@media(max-width:520px) {
+  .item { align-items:stretch; flex-direction:column; }
+  .actions { width:100%; }
+  .btn { flex:1; text-align:center; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="header">
+    <h1>KT-K 접수 링크</h1>
+    <p>기종을 펼쳐서 접수 링크를 열거나 복사하세요.</p>
+  </header>
+  <div class="notice">모든 메뉴는 닫힌 상태로 시작합니다. 필요한 기종만 눌러서 확인하세요.</div>
+  <details class="acc">
+    <summary><span>iPhone 17</span><em>2개</em></summary>
+    <div class="panel"><div class="item">
+      <div class="model">AIP17-256</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/index.jsp?prdcID=A28A806F-4350-4845-A944-32B17A04D894" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/index.jsp?prdcID=A28A806F-4350-4845-A944-32B17A04D894">링크 복사</button>
+      </div>
+    </div><div class="item">
+      <div class="model">AIP17-512</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/index.jsp?prdcID=20E156D8-6838-487F-9DAE-94E00C868775" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/index.jsp?prdcID=20E156D8-6838-487F-9DAE-94E00C868775">링크 복사</button>
+      </div>
+    </div></div>
+  </details>
+<details class="acc">
+    <summary><span>iPhone Air</span><em>3개</em></summary>
+    <div class="panel"><div class="item">
+      <div class="model">AIPA-256</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/index.jsp?prdcID=96DBB8E4-2F68-4D7C-A1B6-8ECF69B65480" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/index.jsp?prdcID=96DBB8E4-2F68-4D7C-A1B6-8ECF69B65480">링크 복사</button>
+      </div>
+    </div><div class="item">
+      <div class="model">AIPA-512</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/index.jsp?prdcID=12349101-9318-4865-89E7-C1730DD6F651" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/index.jsp?prdcID=12349101-9318-4865-89E7-C1730DD6F651">링크 복사</button>
+      </div>
+    </div><div class="item">
+      <div class="model">AIPA-1T</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/index.jsp?prdcID=B26E291F-693C-46FA-A942-33636EBFCDFC" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/index.jsp?prdcID=B26E291F-693C-46FA-A942-33636EBFCDFC">링크 복사</button>
+      </div>
+    </div></div>
+  </details>
+<details class="acc">
+    <summary><span>iPhone 17 Pro</span><em>3개</em></summary>
+    <div class="panel"><div class="item">
+      <div class="model">AIP17P-256</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/index.jsp?prdcID=4EF9C7AC-DC76-487D-B5F2-A5F8D23F5DA4" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/index.jsp?prdcID=4EF9C7AC-DC76-487D-B5F2-A5F8D23F5DA4">링크 복사</button>
+      </div>
+    </div><div class="item">
+      <div class="model">AIP17P-512</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/index.jsp?prdcID=86B456BF-C30A-4C0F-83D3-64AF800C52C2" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/index.jsp?prdcID=86B456BF-C30A-4C0F-83D3-64AF800C52C2">링크 복사</button>
+      </div>
+    </div><div class="item">
+      <div class="model">AIP17P-1T</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/index.jsp?prdcID=D72FD6D4-2D67-4126-A519-C63386CCD4D9" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/index.jsp?prdcID=D72FD6D4-2D67-4126-A519-C63386CCD4D9">링크 복사</button>
+      </div>
+    </div></div>
+  </details>
+<details class="acc">
+    <summary><span>iPhone 17 Pro Max</span><em>4개</em></summary>
+    <div class="panel"><div class="item">
+      <div class="model">AIP17PM-256</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/index.jsp?prdcID=59EC9FA9-3DC1-4B0A-A317-75B9CFEBA8BE" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/index.jsp?prdcID=59EC9FA9-3DC1-4B0A-A317-75B9CFEBA8BE">링크 복사</button>
+      </div>
+    </div><div class="item">
+      <div class="model">AIP17PM-512</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/index.jsp?prdcID=F07443F0-609E-4F62-9D65-2EAC22C91852" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/index.jsp?prdcID=F07443F0-609E-4F62-9D65-2EAC22C91852">링크 복사</button>
+      </div>
+    </div><div class="item">
+      <div class="model">AIP17PM-1T</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/index.jsp?prdcID=C37D9E02-6A30-43F4-814E-8E463239875C" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/index.jsp?prdcID=C37D9E02-6A30-43F4-814E-8E463239875C">링크 복사</button>
+      </div>
+    </div><div class="item">
+      <div class="model">AIP17PM-2T</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/index.jsp?prdcID=DDCF2B2A-69D8-4673-AF70-65ED4413AFEA" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/index.jsp?prdcID=DDCF2B2A-69D8-4673-AF70-65ED4413AFEA">링크 복사</button>
+      </div>
+    </div></div>
+  </details>
+<details class="acc">
+    <summary><span>iPhone 16</span><em>2개</em></summary>
+    <div class="panel"><div class="item">
+      <div class="model">AIP16-128G</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/index.jsp?prdcID=431C8FBF-0D4C-4696-8C29-D8DFD9F9D0CC" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/index.jsp?prdcID=431C8FBF-0D4C-4696-8C29-D8DFD9F9D0CC">링크 복사</button>
+      </div>
+    </div><div class="item">
+      <div class="model">AIP16-256G</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/index.jsp?prdcID=1A009ADF-1DE9-41B2-B8EB-CDB6A788D2DC" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/index.jsp?prdcID=1A009ADF-1DE9-41B2-B8EB-CDB6A788D2DC">링크 복사</button>
+      </div>
+    </div></div>
+  </details>
+<details class="acc">
+    <summary><span>iPhone 16 Pro</span><em>2개</em></summary>
+    <div class="panel"><div class="item">
+      <div class="model">AIP16P-128G</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/index.jsp?prdcID=497DC939-169F-48A1-B3C6-12CF5D03F46D" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/index.jsp?prdcID=497DC939-169F-48A1-B3C6-12CF5D03F46D">링크 복사</button>
+      </div>
+    </div><div class="item">
+      <div class="model">AIP16P-256G</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/index.jsp?prdcID=C58EB381-0C01-49AE-97FB-B4A69BFE484D" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/index.jsp?prdcID=C58EB381-0C01-49AE-97FB-B4A69BFE484D">링크 복사</button>
+      </div>
+    </div></div>
+  </details>
+<details class="acc">
+    <summary><span>Galaxy S25 / S25 Edge</span><em>4개</em></summary>
+    <div class="panel"><div class="item">
+      <div class="model">SM-S931</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/index.jsp?prdcID=A14EEDB2-B8F4-4926-A32D-BCD1918F8744" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/index.jsp?prdcID=A14EEDB2-B8F4-4926-A32D-BCD1918F8744">링크 복사</button>
+      </div>
+    </div><div class="item">
+      <div class="model">SM-S936</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/index.jsp?prdcID=4B4F0440-05A6-4647-A710-08E2898AE25A" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/index.jsp?prdcID=4B4F0440-05A6-4647-A710-08E2898AE25A">링크 복사</button>
+      </div>
+    </div><div class="item">
+      <div class="model">SM-S937</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/index.jsp?prdcID=41F2AFAE-E58A-427B-BB32-8A2499130A6C" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/index.jsp?prdcID=41F2AFAE-E58A-427B-BB32-8A2499130A6C">링크 복사</button>
+      </div>
+    </div><div class="item">
+      <div class="model">SM-S938</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/index.jsp?prdcID=95A98716-8F9C-4E17-AC36-4A78959B46E1" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/index.jsp?prdcID=95A98716-8F9C-4E17-AC36-4A78959B46E1">링크 복사</button>
+      </div>
+    </div></div>
+  </details>
+<details class="acc">
+    <summary><span>Galaxy Fold</span><em>1개</em></summary>
+    <div class="panel"><div class="item">
+      <div class="model">SM-F966</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/index.jsp?prdcID=09AE19C4-0B0B-4DF5-A56C-2409060E4BB3" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/index.jsp?prdcID=09AE19C4-0B0B-4DF5-A56C-2409060E4BB3">링크 복사</button>
+      </div>
+    </div></div>
+  </details>
+<details class="acc">
+    <summary><span>Galaxy Flip</span><em>2개</em></summary>
+    <div class="panel"><div class="item">
+      <div class="model">SM-F761</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/index.jsp?prdcID=9C850C5D-CCE1-4E21-9876-B64DB943AEDB" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/index.jsp?prdcID=9C850C5D-CCE1-4E21-9876-B64DB943AEDB">링크 복사</button>
+      </div>
+    </div><div class="item">
+      <div class="model">SM-F766</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/index.jsp?prdcID=2163012C-89B2-4306-BEF8-420A51BB57A3" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/index.jsp?prdcID=2163012C-89B2-4306-BEF8-420A51BB57A3">링크 복사</button>
+      </div>
+    </div></div>
+  </details>
+<details class="acc">
+    <summary><span>Galaxy A Series</span><em>1개</em></summary>
+    <div class="panel"><div class="item">
+      <div class="model">SM-A366</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/index.jsp?prdcID=F2142B6D-D8B4-4C15-B270-2BAFD1B0AA13" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/index.jsp?prdcID=F2142B6D-D8B4-4C15-B270-2BAFD1B0AA13">링크 복사</button>
+      </div>
+    </div></div>
+  </details>
+<details class="acc">
+    <summary><span>S942</span><em>4개</em></summary>
+    <div class="panel"><div class="item">
+      <div class="model">S942-256 (할부)</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/itg/online/index.do?prdcId=FDA8BEA7-87BF-4F75-BDBC-089D4B258A74" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/itg/online/index.do?prdcId=FDA8BEA7-87BF-4F75-BDBC-089D4B258A74">링크 복사</button>
+      </div>
+    </div><div class="item">
+      <div class="model">S942-512 (할부)</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/itg/online/index.do?prdcId=3052ABA2-3E1E-4C79-BC5B-AA698C87FF49" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/itg/online/index.do?prdcId=3052ABA2-3E1E-4C79-BC5B-AA698C87FF49">링크 복사</button>
+      </div>
+    </div><div class="item">
+      <div class="model">S942-256 (현금)</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/itg/online/index.do?prdcId=B7A924D1-466F-4075-B6CD-2F6A835CA389" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/itg/online/index.do?prdcId=B7A924D1-466F-4075-B6CD-2F6A835CA389">링크 복사</button>
+      </div>
+    </div><div class="item">
+      <div class="model">S942-512 (현금)</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/itg/online/index.do?prdcId=F639E4B2-108B-4416-9466-BF145C3D5DB8" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/itg/online/index.do?prdcId=F639E4B2-108B-4416-9466-BF145C3D5DB8">링크 복사</button>
+      </div>
+    </div></div>
+  </details>
+<details class="acc">
+    <summary><span>S947</span><em>4개</em></summary>
+    <div class="panel"><div class="item">
+      <div class="model">S947-256 (할부)</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/itg/online/index.do?prdcId=22D93524-7D22-40C5-9104-220D0729E2BF" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/itg/online/index.do?prdcId=22D93524-7D22-40C5-9104-220D0729E2BF">링크 복사</button>
+      </div>
+    </div><div class="item">
+      <div class="model">S947-512 (할부)</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/itg/online/index.do?prdcId=7BB73E61-F7FC-4396-A632-8CD49C483073" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/itg/online/index.do?prdcId=7BB73E61-F7FC-4396-A632-8CD49C483073">링크 복사</button>
+      </div>
+    </div><div class="item">
+      <div class="model">S947-256 (현금)</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/itg/online/index.do?prdcId=F6A5E164-6C7F-4AFF-9E50-A4247DFB9CC5" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/itg/online/index.do?prdcId=F6A5E164-6C7F-4AFF-9E50-A4247DFB9CC5">링크 복사</button>
+      </div>
+    </div><div class="item">
+      <div class="model">S947-512 (현금)</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/itg/online/index.do?prdcId=437D10D1-583C-4BE4-A8EF-85ACF9C4583F" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/itg/online/index.do?prdcId=437D10D1-583C-4BE4-A8EF-85ACF9C4583F">링크 복사</button>
+      </div>
+    </div></div>
+  </details>
+<details class="acc">
+    <summary><span>S948</span><em>4개</em></summary>
+    <div class="panel"><div class="item">
+      <div class="model">S948-256 (할부)</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/itg/online/index.do?prdcId=9D76EDCF-EBAA-4853-A4EF-F185BDDD020B" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/itg/online/index.do?prdcId=9D76EDCF-EBAA-4853-A4EF-F185BDDD020B">링크 복사</button>
+      </div>
+    </div><div class="item">
+      <div class="model">S948-512 (할부)</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/itg/online/index.do?prdcId=06F40C2A-71AC-4F08-8DD1-7D543D7E0197" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/itg/online/index.do?prdcId=06F40C2A-71AC-4F08-8DD1-7D543D7E0197">링크 복사</button>
+      </div>
+    </div><div class="item">
+      <div class="model">S948-256 (현금)</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/itg/online/index.do?prdcId=3D37040A-B07E-41CE-8175-2934A09A4BAA" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/itg/online/index.do?prdcId=3D37040A-B07E-41CE-8175-2934A09A4BAA">링크 복사</button>
+      </div>
+    </div><div class="item">
+      <div class="model">S948-512 (현금)</div>
+      <div class="actions">
+        <a class="btn open" href="https://online.kt.com/itg/online/index.do?prdcId=6061238D-0E89-4D92-96BF-A58B51896FAF" target="_blank" rel="noopener">접수 열기</a>
+        <button class="btn copy" data-url="https://online.kt.com/itg/online/index.do?prdcId=6061238D-0E89-4D92-96BF-A58B51896FAF">링크 복사</button>
+      </div>
+    </div></div>
+  </details>
+
+</div>
+<div id="toast" class="toast">복사 완료</div>
+<script>
+const toast = document.getElementById('toast');
+function showToast(msg) {
+  toast.textContent = msg;
+  toast.classList.add('show');
+  setTimeout(() => toast.classList.remove('show'), 1200);
+}
+document.querySelectorAll('.copy').forEach(btn => {
+  btn.addEventListener('click', async () => {
+    const url = btn.dataset.url;
+    try {
+      await navigator.clipboard.writeText(url);
+      showToast('링크 복사 완료');
+    } catch (e) {
+      const ta = document.createElement('textarea');
+      ta.value = url;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      ta.remove();
+      showToast('링크 복사 완료');
+    }
+  });
+});
+</script>
+</body>
+</html>
